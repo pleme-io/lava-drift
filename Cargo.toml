@@ -1,0 +1,24 @@
+[package]
+authors = ["pleme-io"]
+description = "lava-drift — typed drift detector for lava architectures. DriftDetector trait + DriftedField + DriftReport; the canonical detector re-renders the .tlisp source via magma-lava and re-plans against current state. Any non-NoOp ResourceChange = drift event. Pluggable PlannerBackend trait so test code drives the detector without an embedded magma engine."
+edition = "2024"
+license = "MIT"
+name = "lava-drift"
+readme = "README.md"
+repository = "https://github.com/pleme-io/lava-drift"
+version = "0.1.0"
+
+[lib]
+name = "lava_drift"
+path = "src/lib.rs"
+
+[lints.clippy]
+pedantic = "warn"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+chrono = { version = "0.4", features = ["serde"] }
+indexmap = { version = "2", features = ["serde"] }
+thiserror = "2"
+lava-outcome-chain = { git = "https://github.com/pleme-io/lava-outcome-chain", branch = "main" }

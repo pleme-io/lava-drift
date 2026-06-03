@@ -355,8 +355,8 @@ dependencies = [
 
 [[package]]
 name = "lava-outcome-chain"
-version = "0.1.1"
-source = "git+https://github.com/pleme-io/lava-outcome-chain?branch=main#fc1758354ac93df11d5e7ec8bc60a04c263280ea"
+version = "0.1.2"
+source = "git+https://github.com/pleme-io/lava-outcome-chain?branch=main#d70747a11eb45dda222a03abc2b8a3ae9511b7ec"
 dependencies = [
  "blake3",
  "chrono",

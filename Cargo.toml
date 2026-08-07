@@ -21,4 +21,4 @@ serde_json = "1"
 chrono = { version = "0.4", features = ["serde"] }
 indexmap = { version = "2", features = ["serde"] }
 thiserror = "2"
-lava-outcome-chain = { git = "https://github.com/pleme-io/lava-outcome-chain", branch = "main" }
+lava-outcome-chain = "0.1"
